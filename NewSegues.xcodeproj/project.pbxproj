@@ -21,6 +21,7 @@
 		5047205719CD1B6D00C8A4B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5047203919CD1B6D00C8A4B9 /* UIKit.framework */; };
 		5047205F19CD1B6D00C8A4B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5047205D19CD1B6D00C8A4B9 /* InfoPlist.strings */; };
 		5047206119CD1B6D00C8A4B9 /* NewSeguesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5047206019CD1B6D00C8A4B9 /* NewSeguesTests.m */; };
+		5047206C19CE0D9900C8A4B9 /* ClearBoxesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5047206B19CE0D9900C8A4B9 /* ClearBoxesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		5047205C19CD1B6D00C8A4B9 /* NewSeguesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NewSeguesTests-Info.plist"; sourceTree = "<group>"; };
 		5047205E19CD1B6D00C8A4B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5047206019CD1B6D00C8A4B9 /* NewSeguesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewSeguesTests.m; sourceTree = "<group>"; };
+		5047206A19CE0D9900C8A4B9 /* ClearBoxesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearBoxesViewController.h; sourceTree = "<group>"; };
+		5047206B19CE0D9900C8A4B9 /* ClearBoxesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClearBoxesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				5047204419CD1B6D00C8A4B9 /* AppDelegate.h */,
 				5047204519CD1B6D00C8A4B9 /* AppDelegate.m */,
 				5047204719CD1B6D00C8A4B9 /* Main.storyboard */,
+				5047206A19CE0D9900C8A4B9 /* ClearBoxesViewController.h */,
+				5047206B19CE0D9900C8A4B9 /* ClearBoxesViewController.m */,
 				5047204A19CD1B6D00C8A4B9 /* ViewController.h */,
 				5047204B19CD1B6D00C8A4B9 /* ViewController.m */,
 				5047204D19CD1B6D00C8A4B9 /* Images.xcassets */,
@@ -249,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5047206C19CE0D9900C8A4B9 /* ClearBoxesViewController.m in Sources */,
 				5047204C19CD1B6D00C8A4B9 /* ViewController.m in Sources */,
 				5047204619CD1B6D00C8A4B9 /* AppDelegate.m in Sources */,
 				5047204219CD1B6D00C8A4B9 /* main.m in Sources */,

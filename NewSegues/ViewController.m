@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ClearBoxesViewController.h"
 
 @interface ViewController ()
 
@@ -20,10 +21,13 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    ClearBoxesViewController *DCBVC = segue.destinationViewController;
+    UIButton *currentButtonClicked = (UIButton *)sender;
+    DCBVC.title = currentButtonClicked.titleLabel.text;
+    }
 
+-(IBAction)unWindToRoot:(UIStoryboardSegue *)sender{
+
+}
 @end

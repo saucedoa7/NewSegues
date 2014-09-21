@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UIButton *clearBoxes;
+@property (weak, nonatomic) IBOutlet UILabel *endingLabel;
+@property (weak, nonatomic) IBOutlet UIButton *eatBoxes;
 @end
