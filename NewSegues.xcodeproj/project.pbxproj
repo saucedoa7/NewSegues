@@ -115,8 +115,6 @@
 		5047203B19CD1B6D00C8A4B9 /* NewSegues */ = {
 			isa = PBXGroup;
 			children = (
-				5047204419CD1B6D00C8A4B9 /* AppDelegate.h */,
-				5047204519CD1B6D00C8A4B9 /* AppDelegate.m */,
 				5047204719CD1B6D00C8A4B9 /* Main.storyboard */,
 				5047206A19CE0D9900C8A4B9 /* ClearBoxesViewController.h */,
 				5047206B19CE0D9900C8A4B9 /* ClearBoxesViewController.m */,
@@ -131,6 +129,8 @@
 		5047203C19CD1B6D00C8A4B9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5047204419CD1B6D00C8A4B9 /* AppDelegate.h */,
+				5047204519CD1B6D00C8A4B9 /* AppDelegate.m */,
 				5047203D19CD1B6D00C8A4B9 /* NewSegues-Info.plist */,
 				5047203E19CD1B6D00C8A4B9 /* InfoPlist.strings */,
 				5047204119CD1B6D00C8A4B9 /* main.m */,

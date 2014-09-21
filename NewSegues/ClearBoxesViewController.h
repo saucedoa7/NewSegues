@@ -11,5 +11,5 @@
 @interface ClearBoxesViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextView *marrriedEndingTextView;
 @property (weak, nonatomic) IBOutlet UITextView *hospitalEndingTextView;
-
+@property (copy, nonatomic) NSString *endingString;
 @end

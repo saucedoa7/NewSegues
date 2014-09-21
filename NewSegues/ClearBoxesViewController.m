@@ -8,14 +8,19 @@
 #import "ViewController.h"
 
 @interface ClearBoxesViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *hospitalButton;
+@property (weak, nonatomic) IBOutlet UIButton *marriedButton;
 
 @end
 
 @implementation ClearBoxesViewController
 
+@synthesize endingString;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
 
 }
 
@@ -23,16 +28,22 @@
     ClearBoxesViewController *CBVC = segue.destinationViewController;
     UIButton *currentButtonClicked = (UIButton *)sender;
     CBVC.title = currentButtonClicked.titleLabel.text;
+
+    ViewController *mainVC = segue.destinationViewController;
+
+    UITextView *marriedTextView = (UITextView *) self.marrriedEndingTextView;
+    self.endingString = marriedTextView.text;
+    mainVC.endingString = self.endingString;
+
+    UITextView *hospitalTextView = (UITextView *) self.hospitalEndingTextView;
+    self.endingString = hospitalTextView.text;
+    mainVC.endingString = self.endingString;
+
 }
 
 - (IBAction)onHospitalButtonPressed:(id)sender {
-    ViewController *mainVC;
-    [mainVC.endingLabel.text isEqualToString:self.hospitalEndingTextView.text];
-    NSLog(@"%@", self.hospitalEndingTextView.text);
-    NSLog(@"%@", mainVC.endingLabel.text);
 }
+
 - (IBAction)onGetMarriedButtonPressed:(id)sender {
 }
-
-
 @end

@@ -40,6 +40,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.78431379800000001" green="0.85882359740000003" blue="0.94901967050000002" alpha="1" colorSpace="deviceRGB"/>
                                 <state key="normal" title="Eat Boxes">
+                                    <color key="titleColor" red="0.63529413938522339" green="0.63921570777893066" blue="0.92549026012420654" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -47,14 +48,14 @@
                                 </connections>
                             </button>
                             <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ThisorThat" translatesAutoresizingMaskIntoConstraints="NO" id="54c-gZ-Uhp">
-                                <rect key="frame" x="40" y="257" width="240" height="128"/>
+                                <rect key="frame" x="20" y="257" width="285" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ending" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6V-qH-cys">
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ending" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="X6V-qH-cys">
                                 <rect key="frame" x="20" y="456" width="280" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.78431379800000001" green="0.85882359740000003" blue="0.94901967050000002" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="textColor" red="0.99215692281723022" green="0.9960784912109375" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
                                 <color key="highlightedColor" red="0.78431379800000001" green="0.85882359740000003" blue="0.94901967050000002" alpha="1" colorSpace="deviceRGB"/>
                             </label>
                         </subviews>
@@ -149,6 +150,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="7pg-Rj-yEM"/>
                     <connections>
+                        <outlet property="marriedButton" destination="Nm7-QB-83s" id="Ste-gc-8PF"/>
                         <outlet property="marrriedEndingTextView" destination="goq-wd-rnU" id="oVu-Z1-yVp"/>
                     </connections>
                 </viewController>
@@ -233,6 +235,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="mCA-JX-4yb"/>
                     <connections>
+                        <outlet property="hospitalButton" destination="9JB-JT-G56" id="GOH-7f-SLt"/>
                         <outlet property="hospitalEndingTextView" destination="9c3-Os-iHO" id="M2q-d1-eCK"/>
                     </connections>
                 </viewController>

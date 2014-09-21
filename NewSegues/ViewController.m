@@ -18,13 +18,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    self.endingLabel.text = self.endingString;
+    NSLog(@"4 %@", self.endingString);
+    self.title = @"Adventure";
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     ClearBoxesViewController *DCBVC = segue.destinationViewController;
     UIButton *currentButtonClicked = (UIButton *)sender;
     DCBVC.title = currentButtonClicked.titleLabel.text;
+
+    ClearBoxesViewController *SCBVC = segue.sourceViewController;
+    UITextView *currentTextView = (UITextView *) sender;
+    self.endingString = currentTextView.text;
+    self.endingLabel.text = SCBVC.endingString;
+
     }
 
 -(IBAction)unWindToRoot:(UIStoryboardSegue *)sender{

@@ -12,4 +12,5 @@
 @property (weak, nonatomic) IBOutlet UIButton *clearBoxes;
 @property (weak, nonatomic) IBOutlet UILabel *endingLabel;
 @property (weak, nonatomic) IBOutlet UIButton *eatBoxes;
+@property (copy, nonatomic) NSString *endingString;
 @end
