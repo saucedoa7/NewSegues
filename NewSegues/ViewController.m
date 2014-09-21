@@ -31,8 +31,9 @@
     UIButton *currentButtonClicked = (UIButton *)sender;
     DCBVC.title = currentButtonClicked.titleLabel.text;
 
+    id test;
     ClearBoxesViewController *SCBVC = segue.sourceViewController;
-    UITextView *currentTextView = (UITextView *) sender;
+    UITextView *currentTextView = (UITextView *) test;
     self.endingString = currentTextView.text;
     self.endingLabel.text = SCBVC.endingString;
 

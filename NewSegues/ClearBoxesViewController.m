@@ -25,19 +25,24 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+
     ClearBoxesViewController *CBVC = segue.destinationViewController;
     UIButton *currentButtonClicked = (UIButton *)sender;
     CBVC.title = currentButtonClicked.titleLabel.text;
 
     ViewController *mainVC = segue.destinationViewController;
 
-    UITextView *marriedTextView = (UITextView *) self.marrriedEndingTextView;
-    self.endingString = marriedTextView.text;
-    mainVC.endingString = self.endingString;
 
     UITextView *hospitalTextView = (UITextView *) self.hospitalEndingTextView;
-    self.endingString = hospitalTextView.text;
-    mainVC.endingString = self.endingString;
+    UITextView *marriedTextView = (UITextView *) self.marrriedEndingTextView;
+
+    if (self.hospitalEndingTextView) {
+        self.endingString = hospitalTextView.text;
+        mainVC.endingString = self.endingString;
+    } else if (self.marrriedEndingTextView){
+        self.endingString = marriedTextView.text;
+        mainVC.endingString = self.endingString;
+    }
 
 }
 
