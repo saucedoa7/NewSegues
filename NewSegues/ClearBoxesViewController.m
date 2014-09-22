@@ -8,8 +8,8 @@
 #import "ViewController.h"
 
 @interface ClearBoxesViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *hospitalButton;
-@property (weak, nonatomic) IBOutlet UIButton *marriedButton;
+@property (weak, nonatomic) IBOutlet UITextView *marrriedEndingTextView;
+@property (weak, nonatomic) IBOutlet UITextView *hospitalEndingTextView;
 @end
 
 @implementation ClearBoxesViewController
@@ -44,11 +44,5 @@
         mainVC.endingString = self.endingString;
     }
 
-}
-
-- (IBAction)onHospitalButtonPressed:(id)sender {
-}
-
-- (IBAction)onGetMarriedButtonPressed:(id)sender {
 }
 @end

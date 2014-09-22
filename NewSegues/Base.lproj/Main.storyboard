@@ -98,13 +98,13 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Jw-b4-NLY">
-                                <rect key="frame" x="126" y="254" width="82" height="30"/>
+                                <rect key="frame" x="119" y="378" width="82" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Get Married">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="UUz-EP-kNn" kind="push" id="3Xm-BS-Dek"/>
+                                    <segue destination="UUz-EP-kNn" kind="push" id="xGv-a5-RSz"/>
                                 </connections>
                             </button>
                             <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pizzaInTrash" translatesAutoresizingMaskIntoConstraints="NO" id="OMv-73-C4A">
@@ -152,7 +152,7 @@
                                 </connections>
                             </button>
                             <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="getsMarried" translatesAutoresizingMaskIntoConstraints="NO" id="n3n-o8-wQ8">
-                                <rect key="frame" x="40" y="134" width="240" height="215"/>
+                                <rect key="frame" x="40" y="93" width="240" height="215"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -160,7 +160,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="7pg-Rj-yEM"/>
                     <connections>
-                        <outlet property="marriedTextField" destination="goq-wd-rnU" id="Pge-1K-23M"/>
                         <outlet property="marrriedEndingTextView" destination="goq-wd-rnU" id="oVu-Z1-yVp"/>
                     </connections>
                 </viewController>
@@ -188,7 +187,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="aXH-ms-rPA" kind="push" id="HsV-An-KKk"/>
+                                    <segue destination="aXH-ms-rPA" kind="push" id="dbz-GE-QV3"/>
                                 </connections>
                             </button>
                             <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stomachPumped" translatesAutoresizingMaskIntoConstraints="NO" id="y2e-uC-F3v">
@@ -245,7 +244,6 @@
                     <navigationItem key="navigationItem" id="mCA-JX-4yb"/>
                     <connections>
                         <outlet property="hospitalEndingTextView" destination="9c3-Os-iHO" id="M2q-d1-eCK"/>
-                        <outlet property="hospitalTextField" destination="9c3-Os-iHO" id="YuT-jf-o9a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ZT-nK-ZnH" userLabel="First Responder" sceneMemberID="firstResponder"/>
