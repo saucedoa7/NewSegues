@@ -16,16 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView appearanceType="aqua" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Ryan wakes up in the Mobile Maker space surrounded by empty pizza boxes" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eU3-ou-CfG">
-                                <rect key="frame" x="40" y="112" width="240" height="234"/>
+                            <textView appearanceType="aqua" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Ryan wakes up in the Mobile Maker space surrounded by empty pizza boxes" translatesAutoresizingMaskIntoConstraints="NO" id="7qP-tt-pLZ">
+                                <rect key="frame" x="35" y="57" width="240" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.011764707040000001" green="0.81176477670000002" blue="0.98823535439999999" alpha="0.0" colorSpace="deviceRGB"/>
-                                <color key="textColor" red="0.98823535442352295" green="0.9960784912109375" blue="0.9960784912109375" alpha="1" colorSpace="deviceRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5NH-FK-T7P">
-                                <rect key="frame" x="40" y="393" width="108" height="30"/>
+                                <rect key="frame" x="20" y="190" width="108" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.78431379795074463" green="0.85882359743118286" blue="0.9490196704864502" alpha="1" colorSpace="deviceRGB"/>
                                 <state key="normal" title="Clear Up Boxes">
@@ -36,7 +36,7 @@
                                 </connections>
                             </button>
                             <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ack-1m-m47">
-                                <rect key="frame" x="210" y="393" width="70" height="30"/>
+                                <rect key="frame" x="230" y="190" width="70" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.78431379800000001" green="0.85882359740000003" blue="0.94901967050000002" alpha="1" colorSpace="deviceRGB"/>
                                 <state key="normal" title="Eat Boxes">
@@ -48,16 +48,25 @@
                                 </connections>
                             </button>
                             <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ThisorThat" translatesAutoresizingMaskIntoConstraints="NO" id="54c-gZ-Uhp">
-                                <rect key="frame" x="20" y="257" width="285" height="128"/>
+                                <rect key="frame" x="20" y="228" width="285" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ending" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="X6V-qH-cys">
-                                <rect key="frame" x="20" y="456" width="280" height="92"/>
+                                <rect key="frame" x="20" y="364" width="280" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.99215692281723022" green="0.9960784912109375" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
                                 <color key="highlightedColor" red="0.78431379800000001" green="0.85882359740000003" blue="0.94901967050000002" alpha="1" colorSpace="deviceRGB"/>
                             </label>
+                            <textField appearanceType="aqua" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s3N-ap-wKa">
+                                <rect key="frame" x="20" y="85" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="TZk-Zd-Utd"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -67,6 +76,8 @@
                         <outlet property="clearBoxes" destination="5NH-FK-T7P" id="bYI-z1-NhP"/>
                         <outlet property="eatBoxes" destination="Ack-1m-m47" id="t9y-gZ-vYp"/>
                         <outlet property="endingLabel" destination="X6V-qH-cys" id="J76-im-KWX"/>
+                        <outlet property="heroTextField" destination="s3N-ap-wKa" id="8rZ-FI-LiK"/>
+                        <outlet property="mainStory" destination="7qP-tt-pLZ" id="Ukh-0A-qrZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -137,7 +148,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onGetMarriedButtonPressed:" destination="UUz-EP-kNn" eventType="touchUpInside" id="dAt-Lj-fpX"/>
                                     <segue destination="6J8-jH-lxk" kind="unwind" unwindAction="unWindToRoot:" id="Tsb-d4-8nu"/>
                                 </connections>
                             </button>
@@ -150,7 +160,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="7pg-Rj-yEM"/>
                     <connections>
-                        <outlet property="marriedButton" destination="Nm7-QB-83s" id="Ste-gc-8PF"/>
+                        <outlet property="marriedTextField" destination="goq-wd-rnU" id="Pge-1K-23M"/>
                         <outlet property="marrriedEndingTextView" destination="goq-wd-rnU" id="oVu-Z1-yVp"/>
                     </connections>
                 </viewController>
@@ -213,7 +223,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onHospitalButtonPressed:" destination="aXH-ms-rPA" eventType="touchUpInside" id="UQh-ua-Wl2"/>
                                     <segue destination="MzK-nK-KRm" kind="unwind" unwindAction="unWindToRoot:" id="FLg-IF-Ffc"/>
                                 </connections>
                             </button>
@@ -235,8 +244,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="mCA-JX-4yb"/>
                     <connections>
-                        <outlet property="hospitalButton" destination="9JB-JT-G56" id="GOH-7f-SLt"/>
                         <outlet property="hospitalEndingTextView" destination="9c3-Os-iHO" id="M2q-d1-eCK"/>
+                        <outlet property="hospitalTextField" destination="9c3-Os-iHO" id="YuT-jf-o9a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ZT-nK-ZnH" userLabel="First Responder" sceneMemberID="firstResponder"/>

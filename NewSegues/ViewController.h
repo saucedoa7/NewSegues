@@ -13,4 +13,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *endingLabel;
 @property (weak, nonatomic) IBOutlet UIButton *eatBoxes;
 @property (copy, nonatomic) NSString *endingString;
+@property (copy, nonatomic) NSString *heroName;
+@property (copy, nonatomic) NSString *updatedName;
 @end

@@ -10,7 +10,6 @@
 @interface ClearBoxesViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *hospitalButton;
 @property (weak, nonatomic) IBOutlet UIButton *marriedButton;
-
 @end
 
 @implementation ClearBoxesViewController
@@ -20,8 +19,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+}
 
-
+-(void)viewDidAppear:(BOOL)animated{
+    NSLog(@"Updated name %@", self.updatedName);
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
@@ -31,7 +32,6 @@
     CBVC.title = currentButtonClicked.titleLabel.text;
 
     ViewController *mainVC = segue.destinationViewController;
-
 
     UITextView *hospitalTextView = (UITextView *) self.hospitalEndingTextView;
     UITextView *marriedTextView = (UITextView *) self.marrriedEndingTextView;
