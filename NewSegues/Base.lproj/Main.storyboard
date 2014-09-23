@@ -32,7 +32,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Vee-C3-sqh" kind="push" id="aOJ-ef-Qxn"/>
+                                    <segue destination="Vee-C3-sqh" kind="push" identifier="toClearPizzaBoxes" id="aOJ-ef-Qxn"/>
                                 </connections>
                             </button>
                             <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ack-1m-m47">
@@ -44,7 +44,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="lLY-7F-4SD" kind="push" id="5bh-MG-6tk"/>
+                                    <segue destination="lLY-7F-4SD" kind="push" identifier="toEatBoxes" id="5bh-MG-6tk"/>
                                 </connections>
                             </button>
                             <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ThisorThat" translatesAutoresizingMaskIntoConstraints="NO" id="54c-gZ-Uhp">
@@ -104,7 +104,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="UUz-EP-kNn" kind="push" id="xGv-a5-RSz"/>
+                                    <segue destination="UUz-EP-kNn" kind="push" identifier="toMarriedEnding" id="xGv-a5-RSz"/>
                                 </connections>
                             </button>
                             <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pizzaInTrash" translatesAutoresizingMaskIntoConstraints="NO" id="OMv-73-C4A">
@@ -187,7 +187,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="aXH-ms-rPA" kind="push" id="dbz-GE-QV3"/>
+                                    <segue destination="aXH-ms-rPA" kind="push" identifier="toHospitalSegue" id="dbz-GE-QV3"/>
                                 </connections>
                             </button>
                             <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stomachPumped" translatesAutoresizingMaskIntoConstraints="NO" id="y2e-uC-F3v">

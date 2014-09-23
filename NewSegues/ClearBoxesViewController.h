@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ClearBoxesViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UITextView *marrriedEndingTextView;
+@property (weak, nonatomic) IBOutlet UITextView *hospitalEndingTextView;
 @property (copy, nonatomic) NSString *endingString;
 @property (copy, nonatomic) NSString *updatedName;
 

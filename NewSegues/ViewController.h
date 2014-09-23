@@ -12,6 +12,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *clearBoxes;
 @property (weak, nonatomic) IBOutlet UILabel *endingLabel;
 @property (weak, nonatomic) IBOutlet UIButton *eatBoxes;
+@property (weak, nonatomic) IBOutlet UITextField *heroTextField;
+@property (weak, nonatomic) IBOutlet UITextView *mainStory;
 @property (copy, nonatomic) NSString *endingString;
 @property (copy, nonatomic) NSString *heroName;
 @property (copy, nonatomic) NSString *updatedName;

@@ -12,13 +12,10 @@
 #define Name @"Ryan"
 
 @interface ViewController ()<UITextFieldDelegate>
-@property (strong, nonatomic) IBOutlet UITextField *heroTextField;
-@property (weak, nonatomic) IBOutlet UITextView *mainStory;
+
 @end
 
 @implementation ViewController
-
-
 
 - (void)viewDidLoad
 {
@@ -45,13 +42,15 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     self.heroName = self.heroTextField.text;
-    NSLog(@"Hero name %@", self.heroName);
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+
     ClearBoxesViewController *DCBVC = segue.destinationViewController;
     UIButton *currentButtonClicked = (UIButton *)sender;
     DCBVC.title = currentButtonClicked.titleLabel.text;
+
+    // The name gets passed back and fourth here (2 of 2)
     DCBVC.updatedName = self.updatedName;
     NSLog(@"DCBVC %@", DCBVC.updatedName);
 
@@ -60,6 +59,7 @@
     UITextView *currentTextView = (UITextView *) test;
     self.endingString = currentTextView.text;
     self.endingLabel.text =  SCBVC.endingString;
+
 }
 
 -(IBAction)unWindToRoot:(UIStoryboardSegue *)sender{

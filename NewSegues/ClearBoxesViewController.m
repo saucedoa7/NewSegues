@@ -7,29 +7,40 @@
 #import "ClearBoxesViewController.h"
 #import "ViewController.h"
 
-@interface ClearBoxesViewController ()
-@property (weak, nonatomic) IBOutlet UITextView *marrriedEndingTextView;
-@property (weak, nonatomic) IBOutlet UITextView *hospitalEndingTextView;
+@interface ClearBoxesViewController ()<UITextViewDelegate>
 @end
 
 @implementation ClearBoxesViewController
 
 @synthesize endingString;
+@synthesize updatedName;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 }
 
--(void)viewDidAppear:(BOOL)animated{
-    NSLog(@"Updated name %@", self.updatedName);
+-(void)viewWillAppear:(BOOL)animated{
+    [self textViewShouldBeginEditing:self.hospitalEndingTextView];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
 
-    ClearBoxesViewController *CBVC = segue.destinationViewController;
+    ClearBoxesViewController *DCBVC = segue.destinationViewController;
     UIButton *currentButtonClicked = (UIButton *)sender;
-    CBVC.title = currentButtonClicked.titleLabel.text;
+    DCBVC.title = currentButtonClicked.titleLabel.text;
+
+
+    // The name gets passed back and fourth here (1 of 2)
+    DCBVC.updatedName = self.updatedName;
+    NSLog(@"DCBVC %@", DCBVC.updatedName);
+
+    ViewController *fromMainVC = segue.sourceViewController;
+    if (self.hospitalEndingTextView) {
+        fromMainVC.updatedName = self.updatedName;
+    } else if (self.marrriedEndingTextView){
+        fromMainVC.updatedName = self.updatedName;
+    }
 
     ViewController *mainVC = segue.destinationViewController;
 
@@ -43,6 +54,32 @@
         self.endingString = marriedTextView.text;
         mainVC.endingString = self.endingString;
     }
-
+    
 }
+
+-(BOOL)textViewShouldBeginEditing:(UITextView *)textView{
+
+    if (self.hospitalEndingTextView) {
+        NSString *hospitalEndingString = [NSString stringWithFormat:@"%@ gets his stomach pumped. The end.", self.updatedName];
+
+        NSLog(@"updatedNAme %@", self.updatedName);
+        NSLog(@"String %@", hospitalEndingString);
+
+        self.hospitalEndingTextView.text = [[NSString alloc ] initWithString:hospitalEndingString];
+
+        NSLog(@"HTextView %@", hospitalEndingString);
+
+    } else if (self.marrriedEndingTextView){
+
+        NSString *marriedEndingString = [NSString stringWithFormat: @"​%@ gets married with four children. The end.", self.updatedName];
+
+        self.marrriedEndingTextView.text = marriedEndingString;
+        NSLog(@"MTextView %@", marriedEndingString);
+        
+    }
+
+    return YES;
+}
+
+
 @end
